@@ -15,6 +15,8 @@
             href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
             rel="stylesheet"
         />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
     </head>
     <body>
         <header class="header">
@@ -41,13 +43,17 @@
                                 >About
                             </a>
                         </li>
-						<li class="header__link-wrapper">
-                            <a href="./index.html#experience" class="header__link"
+                        <li class="header__link-wrapper">
+                            <a
+                                href="./index.html#experience"
+                                class="header__link"
                                 >Professional Experience
                             </a>
                         </li>
-						<li class="header__link-wrapper">
-                            <a href="./index.html#education" class="header__link"
+                        <li class="header__link-wrapper">
+                            <a
+                                href="./index.html#education"
+                                class="header__link"
                                 >Education
                             </a>
                         </li>
@@ -90,15 +96,17 @@
                             <a href="./index.html#about"> About </a>
                         </li>
 
-						<li class="header__sm-menu-link">
-                            <a href="./index.html#about"> Professional Experience </a>
+                        <li class="header__sm-menu-link">
+                            <a href="./index.html#about">
+                                Professional Experience
+                            </a>
                         </li>
 
-						<li class="header__sm-menu-link">
+                        <li class="header__sm-menu-link">
                             <a href="./index.html#about"> Education </a>
                         </li>
 
-						<li class="header__sm-menu-link">
+                        <li class="header__sm-menu-link">
                             <a href="./index.html#about"> About </a>
                         </li>
 
@@ -115,21 +123,29 @@
         </header>
         <section class="home-hero">
             <div class="home-hero__content">
-                <h1 class="heading-primary">Hey, I'm Bastien Genod</h1>
+                <h1 class="heading-primary" id="whoami"></h1>
                 <div class="home-hero__info">
                     <p class="text-primary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Hic facilis tempora explicabo quae quod deserunt eius
-                        sapiente solutions for complex problems
+                        Passionate about computer science and blockchain
+                        technologies, I am looking for an internship that
+                        combines these exploding fields.
                     </p>
                 </div>
                 <div class="home-hero__cta">
-                    <a href="./assets/CV.pdf" class="btn btn--bg">My Resume</a>
+                    <a
+                        href="./assets/CV.pdf"
+                        class="btn btn--bg"
+                        target="_blank"
+                        ><i class="fas fa-file-download"></i> My Resume</a
+                    >
                 </div>
             </div>
             <div class="home-hero__socials">
                 <div class="home-hero__social">
-                    <a href="https://www.linkedin.com/in/bastien-genod/" class="home-hero__social-icon-link">
+                    <a
+                        href="https://www.linkedin.com/in/bastien-genod/"
+                        class="home-hero__social-icon-link"
+                    >
                         <img
                             src="./assets/png/linkedin-ico.png"
                             alt="icon"
@@ -138,7 +154,10 @@
                     </a>
                 </div>
                 <div class="home-hero__social">
-                    <a href="https://github.com/Batgame" class="home-hero__social-icon-link">
+                    <a
+                        href="https://github.com/Batgame"
+                        class="home-hero__social-icon-link"
+                    >
                         <img
                             src="./assets/png/github-ico.png"
                             alt="icon"
@@ -147,7 +166,10 @@
                     </a>
                 </div>
                 <div class="home-hero__social">
-                    <a href="https://twitter.com/Batgame11" class="home-hero__social-icon-link">
+                    <a
+                        href="https://twitter.com/Batgame11"
+                        class="home-hero__social-icon-link"
+                    >
                         <img
                             src="./assets/png/twitter-ico.png"
                             alt="icon"
@@ -178,7 +200,7 @@
         <section id="about" class="about sec-pad">
             <div class="main-container">
                 <h2 class="heading heading-sec heading-sec__mb-med">
-                    <span class="heading-sec__main">About Me</span>
+                    <span class="heading-sec__main">🙎‍♂️ About Me</span>
                     <span class="heading-sec__sub">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Hic facilis tempora explicabo quae quod deserunt eius
@@ -191,15 +213,12 @@
                         <div class="about__content-details">
                             <p class="about__content-details-para">
                                 Hey! It's
-                                <strong>John Doe</strong>
+                                <strong>Bastien GENOD</strong>
                                 and I'm a
-                                <strong> Frontend Web Developer </strong>
-                                located in Los Angeles. I've done
-                                <strong> remote </strong>
-                                projects for agencies, consulted for startups,
-                                and collaborated with talented people to create
-                                <strong>digital products </strong>
-                                for both business and consumer use.
+                                <strong> Full-Stack Web Developer </strong>
+                                located in Annecy, France. I have done many
+                                projects whether it be school, personal or
+                                professional.
                             </p>
                             <p class="about__content-details-para">
                                 I'm a bit of a digital product junky. Over the
@@ -215,21 +234,91 @@
                             >Contact</a
                         >
                     </div>
+                    <!--
                     <div class="about__content-skills">
                         <h3 class="about__content-title">My Skills</h3>
                         <div class="skills">
+                            <div class="skills__skill">Laravel</div>
+                            <div class="skills__skill">Nuxt.JS</div>
+                            <div class="skills__skill">Python</div>
+                            <div class="skills__skill">JavaScript</div>
+                            <div class="skills__skill">Trello</div>
+                            <div class="skills__skill">PHP</div>
+                            <div class="skills__skill">Docker</div>
+                            <div class="skills__skill">Linux</div>
+                            <div class="skills__skill">GIT</div>
+                            <div class="skills__skill">Oracle</div>
+                            <div class="skills__skill">PostgreSQL</div>
                             <div class="skills__skill">HTML</div>
                             <div class="skills__skill">CSS</div>
-                            <div class="skills__skill">JavaScript</div>
-                            <div class="skills__skill">React</div>
-                            <div class="skills__skill">SASS</div>
-                            <div class="skills__skill">GIT</div>
-                            <div class="skills__skill">Shopify</div>
-                            <div class="skills__skill">Wordpress</div>
-                            <div class="skills__skill">Google ADS</div>
-                            <div class="skills__skill">Facebook Ads</div>
-                            <div class="skills__skill">Android</div>
-                            <div class="skills__skill">IOS</div>
+                            <div class="skills__skill">C</div>
+                            <div class="skills__skill">C#</div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="container-fluid" id="skills">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="skills-text">
+                                    <h1 class="skills-title underline">
+                                        Skills
+                                    </h1>
+                                    <dt class="skill-name">PHP</dt>
+                                    <dd
+                                        class="skill-percent skill-percent-php"
+                                        data-percent="90%"
+                                    ></dd>
+                                    <dt class="skill-name">Javascript</dt>
+                                    <dd
+                                        class="
+                                            skill-percent
+                                            skill-percent-javascript
+                                        "
+                                        data-percent="90%"
+                                    ></dd>
+                                    <dl class="skills-list">
+                                        <dt class="skill-name">Python</dt>
+                                        <dd
+                                            class="
+                                                skill-percent
+                                                skill-percent-python
+                                            "
+                                            data-percent="90%"
+                                        ></dd>
+                                        <dt class="skill-name">Docker</dt>
+                                        <dd
+                                            class="
+                                                skill-percent skill-percent-css
+                                            "
+                                            data-percent="80%"
+                                        ></dd>
+                                        <dt class="skill-name">GIT</dt>
+                                        <dd
+                                            class="
+                                                skill-percent skill-percent-git
+                                            "
+                                            data-percent="80%"
+                                        ></dd>
+                                        <dt class="skill-name">
+                                            PostgreSQL, Oracle
+                                        </dt>
+                                        <dd
+                                            class="
+                                                skill-percent skill-percent-scss
+                                            "
+                                            data-percent="60%"
+                                        ></dd>
+                                        <dt class="skill-name">C#</dt>
+                                        <dd
+                                            class="
+                                                skill-percent
+                                                skill-percent-jquery
+                                            "
+                                            data-percent="50%"
+                                        ></dd>
+                                    </dl>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -239,7 +328,9 @@
         <section id="experience" class="about sec-pad">
             <div class="main-container">
                 <h2 class="heading heading-sec heading-sec__mb-med">
-                    <span class="heading-sec__main">Professional Experience</span>
+                    <span class="heading-sec__main"
+                        >👨‍💻 Professional Experience</span
+                    >
                     <span class="heading-sec__sub">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Hic facilis tempora explicabo quae quod deserunt eius
@@ -250,36 +341,71 @@
                 <div class="timeline">
                     <div class="container left">
                         <div class="content">
-                            <h2>2017</h2>
-                            <p>Lorem ipsum..</p>
+                            <h2>
+                                Tobacco "Le Memphis", <i>University Project</i>
+                            </h2>
+                            <span class="desc-exp"
+                                >Mar 2021 – Mar 2022 | Bellignat, France</span
+                            >
+                            <p class="text-exp">
+                                Design, development and integration of an online
+                                shop for a tobacco shop. Implementation of a
+                                Click&Collect service and a complete
+                                administration panel. <br />Technologies used :
+                                <b>Vue.Js</b>, <b>Nuxt.JS</b>.
+                            </p>
                         </div>
                     </div>
                     <div class="container right">
                         <div class="content">
-                            <h2>2016</h2>
-                            <p>Lorem ipsum..</p>
+                            <h2>
+                                Students association "BDE Odin",
+                                <i>Vice-président</i>
+                            </h2>
+                            <span class="desc-exp"
+                                >Mar 2021 - Mar 2022 | IUT of Annecy,
+                                France</span
+                            >
+                            <p class="text-exp">
+                                - Teamwork and management of the various members
+                                of the association.<br />
+                                - Financial management and organisation of sales
+                                accounting. <br />
+                                - Search for new sponsors, negotiation of
+                                existing agreements. <br />
+                                - Taking initiatives for the development of the
+                                different poles: setting up a payment terminal,
+                                creating a sponsorship site between promos, etc.
+                            </p>
                         </div>
                     </div>
-					<div class="container left">
+                    <div class="container left">
                         <div class="content">
-                            <h2>2017</h2>
-                            <p>Lorem ipsum..</p>
-                        </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2016</h2>
-                            <p>Lorem ipsum..</p>
+                            <h2>
+                                Aquatic Center of Villard-de-Lans,
+                                <i>Lifegard</i>
+                            </h2>
+                            <span class="desc-exp"
+                                >Jul 2021 - Jul 2021 | France</span
+                            >
+                            <p class="text-exp">
+                                - Supervision in a varied environment (indoor
+                                and outdoor pool, wave pool, slides). <br />
+                                - Continuous concentration over long periods of
+                                supervision.<br />
+                                - Anticipation and prevention of accidents.<br />
+                                - Teamwork and dynamism.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-		<section id="education" class="about sec-pad">
+        <section id="education" class="about sec-pad">
             <div class="main-container">
                 <h2 class="heading heading-sec heading-sec__mb-med">
-                    <span class="heading-sec__main">Education</span>
+                    <span class="heading-sec__main">📚 Education</span>
                     <span class="heading-sec__sub">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Hic facilis tempora explicabo quae quod deserunt eius
@@ -290,26 +416,21 @@
                 <div class="timeline">
                     <div class="container left">
                         <div class="content">
-                            <h2>2017</h2>
-                            <p>Lorem ipsum..</p>
+                            <h2>DUT Informatique, <i>IUT of Annecy</i></h2>
+                            <span class="desc-exp">2022 | Annecy, France</span>
+                            <p class="text-exp">
+                                2-year university diploma in computer science.
+                            </p>
+                            p>
                         </div>
                     </div>
                     <div class="container right">
                         <div class="content">
-                            <h2>2016</h2>
-                            <p>Lorem ipsum..</p>
-                        </div>
-                    </div>
-					<div class="container left">
-                        <div class="content">
-                            <h2>2017</h2>
-                            <p>Lorem ipsum..</p>
-                        </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2016</h2>
-                            <p>Lorem ipsum..</p>
+                            <h2>Baccalauréat, Lycée Simone Weil</h2>
+                            <span class="desc-exp"
+                                >2020 | St-Etienne, France</span
+                            >
+                            <p class="text-exp">High School disploma.</p>
                         </div>
                     </div>
                 </div>
@@ -319,7 +440,7 @@
         <section id="projects" class="projects sec-pad">
             <div class="main-container">
                 <h2 class="heading heading-sec heading-sec__mb-bg">
-                    <span class="heading-sec__main">Projects</span>
+                    <span class="heading-sec__main">📂 Projects</span>
                     <span class="heading-sec__sub">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Hic facilis tempora explicabo quae quod deserunt eius
@@ -339,12 +460,13 @@
                         </div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">
-                                Project 1
+                                📈 What To Trade
                             </h3>
                             <p class="projects__row-content-desc">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Hic facilis tempora, explicabo
-                                quae quod deserunt eius sapiente praesentium.
+                                WTT automatically analyzes the crypto-currency
+                                market to allow traders to get a quick overview
+                                of charting opportunities.<br />
+                                Technologies used: Python, Flask, REST API.
                             </p>
                             <a
                                 href="./project-1.html"
@@ -365,12 +487,13 @@
                         </div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">
-                                Project 2
+                                🤖 AI Bitcoin
                             </h3>
                             <p class="projects__row-content-desc">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Hic facilis tempora, explicabo
-                                quae quod deserunt eius sapiente praesentium.
+                                A Python script that uses a recurrent neural
+                                network (RNN) and LSTM to predict the Bitcoin
+                                price in period N+1 from the previous 30
+                                periods.
                             </p>
                             <a
                                 href="./project-2.html"
@@ -391,12 +514,12 @@
                         </div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">
-                                Project 3
+                                🚗 BlaBlaNight
                             </h3>
                             <p class="projects__row-content-desc">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Hic facilis tempora, explicabo
-                                quae quod deserunt eius sapiente praesentium.
+                                A simple and intuitive web-app that allows
+                                students of the IUT of Annecy to carpool to
+                                nightclubs.
                             </p>
                             <a
                                 href="./project-3.html"
@@ -413,7 +536,7 @@
             <div class="main-container">
                 <h2 class="heading heading-sec heading-sec__mb-med">
                     <span class="heading-sec__main heading-sec__main--lt"
-                        >Contact</span
+                        >📨 Contact</span
                     >
                     <span class="heading-sec__sub heading-sec__sub--lt">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -481,28 +604,44 @@
                             <span>Social</span>
                         </h2>
                         <div class="main-footer__social-cont">
-                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bastien-genod/">
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.linkedin.com/in/bastien-genod/"
+                            >
                                 <img
                                     class="main-footer__icon"
                                     src="./assets/png/linkedin-ico.png"
                                     alt="icon"
                                 />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="https://github.com/Batgame">
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://github.com/Batgame"
+                            >
                                 <img
                                     class="main-footer__icon"
                                     src="./assets/png/github-ico.png"
                                     alt="icon"
                                 />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="https://twitter.com/Batgame11">
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://twitter.com/Batgame11"
+                            >
                                 <img
                                     class="main-footer__icon"
                                     src="./assets/png/twitter-ico.png"
                                     alt="icon"
                                 />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/bastien.genod/">
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://www.instagram.com/bastien.genod/"
+                            >
                                 <img
                                     class="
                                         main-footer__icon
@@ -515,7 +654,9 @@
                         </div>
                     </div>
                     <div class="main-footer__row main-footer__row-2">
-                        <h4 class="heading heading-sm text-lt">John Doe</h4>
+                        <h4 class="heading heading-sm text-lt">
+                            Bastien GENOD
+                        </h4>
                         <p class="main-footer__short-desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit facilis tempora explicabo quae quod deserunt
@@ -535,7 +676,10 @@
                 </div>
             </div>
         </footer>
-
+        <script
+            src="https://kit.fontawesome.com/d1ae676b0e.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="./index.js"></script>
     </body>
 </html>

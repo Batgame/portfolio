@@ -1,14 +1,102 @@
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  &__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 1.6rem;
-    background: rgba(#999, 0.2);
-    border-radius: $commonBorderRadius;
-    font-weight: 600;
-    color: #777;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    &__skill {
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: 1.6rem;
+        background: rgba(#999, 0.2);
+        border-radius: $commonBorderRadius;
+        font-weight: 600;
+        color: #777;
+    }
+}
+
+/* SKILLS */
+
+.skills-text {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.skills-title {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.skills-title.underline:before {
+    width: 40px;
+}
+
+.skills-list {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+.skill-name:after {
+    background-color: #999797;
+    content: "";
+    display: block;
+    height: 1rem;
+    position: relative;
+    top: 3px;
+    /*top: 1rem;*/
+    width: 100%;
+}
+
+.skill-percent {
+    font-size: 0;
+    height: 1rem;
+    position: relative;
+    top: -0.8rem;
+    transition: 3s linear;
+    width: 0;
+}
+
+/* SKILL BAR COLORS */
+
+.skill-percent-python {
+    background-color: #ff5c00;
+}
+.skill-percent-css {
+    background-color: #00b1db;
+}
+.skill-percent-jquery {
+    background-color: #ffc100;
+}
+.skill-percent-scss {
+    background-color: #ff768e;
+}
+.skill-percent-javascript {
+    background-color: #ff8b00;
+}
+.skill-percent-wordpress {
+    background-color: #0073b0;
+}
+.skill-percent-php {
+    background-color: #464c99;
+}
+.skill-percent-git {
+    background-color: #ff5c00;
+}
+
+/* Heading Underline */
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.underline:before {
+    background-color: #fff;
+    bottom: -15px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 110%;
 }
