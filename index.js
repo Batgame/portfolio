@@ -46,6 +46,7 @@ $(".skill-percent").each(function () {
     );
 });
 
+
 new TypeIt("#whoami", {
     speed: 125,
     startDelay: 1000,
