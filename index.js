@@ -46,7 +46,6 @@ $(".skill-percent").each(function () {
     );
 });
 
-
 new TypeIt("#whoami", {
     speed: 125,
     startDelay: 1000,
@@ -64,3 +63,5 @@ new TypeIt("#whoami", {
     .move(-11)
     .type("Full-Stack ")
     .go();
+
+
