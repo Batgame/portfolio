@@ -11,7 +11,7 @@
     height: 100vh;
 
     min-height: 80rem;
-    max-height: 120rem;
+    max-height: 100vh;
     position: relative;
 
     @include respond(phone) {
