@@ -409,6 +409,21 @@ textarea {
 .text-exp {
   font-size: 1.4rem; }
 
+#languages {
+  display: flex;
+  margin-bottom: 5vh; }
+
+#soft {
+  display: flex;
+  justify-content: space-between; }
+
+.softSkills {
+  text-align: center;
+  font-size: 1.4rem; }
+
+#soft img {
+  width: 7vw; }
+
 .header {
   position: fixed;
   width: 100%;
@@ -627,25 +642,25 @@ textarea {
 
 /* SKILL BAR COLORS */
 .skill-percent-python {
-  background-color: #ff5c00; }
+  background-color: #073b4c; }
 
 .skill-percent-css {
-  background-color: #00b1db; }
+  background-color: #118ab2; }
 
 .skill-percent-jquery {
-  background-color: #ffc100; }
+  background-color: #06d6a0; }
 
 .skill-percent-scss {
-  background-color: #ff768e; }
+  background-color: #ffd166; }
 
 .skill-percent-javascript {
   background-color: #ff8b00; }
 
 .skill-percent-wordpress {
-  background-color: #0073b0; }
+  background-color: #ef476f; }
 
 .skill-percent-php {
-  background-color: #464c99; }
+  background-color: #eae2b7; }
 
 .skill-percent-git {
   background-color: #ff5c00; }
@@ -800,3 +815,36 @@ textarea {
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%; } }
+
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0; }
+  100% {
+    --pgPercentage: var(--value); } }
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0; }
+
+div[role="progressbar"] {
+  --size: 12rem;
+  --fg: var(--color);
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+  margin-right: 5vw; }
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: var(--ll); }

@@ -301,3 +301,26 @@
 .text-exp {
 	font-size: 1.4rem;
 }
+
+#languages 
+{
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+#soft
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.softSkills
+{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#soft img
+{
+    width: 7vw;
+}
