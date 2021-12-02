@@ -457,6 +457,10 @@ textarea {
 .reference_cardox:hover::after {
   opacity: 1; }
 
+@media only screen and (max-width: 600px) {
+  #soft img {
+    width: 20vw; } }
+
 .header {
   position: fixed;
   width: 100vw;
