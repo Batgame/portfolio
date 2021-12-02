@@ -219,7 +219,6 @@
                         <h3 class="about__content-title">Languages</h3>
                         <div id="languages">
                             <div
-                                role="progressbar"
                                 aria-valuenow="65"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
@@ -228,9 +227,9 @@
                                     --color: #6096ba;
                                     --ll: 'English';
                                 "
+                                class="hidden"
                             ></div>
                             <div
-                                role="progressbar"
                                 aria-valuenow="65"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
@@ -239,9 +238,9 @@
                                     --color: #f95738;
                                     --ll: 'French';
                                 "
+                                class="hidden"
                             ></div>
                             <div
-                                role="progressbar"
                                 aria-valuenow="65"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
@@ -250,6 +249,7 @@
                                     --color: #ee964b;
                                     --ll: 'Spanish';
                                 "
+                                class="hidden"
                             ></div>
                         </div>
 
@@ -278,7 +278,7 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <div class="container-fluid" id="skills">
                         <div class="row">
                             <div class="col-lg-12">
@@ -297,10 +297,7 @@
                                         Javascript (Nuxt.JS, NPM, Node.JS)
                                     </dt>
                                     <dd
-                                        class="
-                                            skill-percent
-                                            skill-percent-javascript
-                                        "
+                                        class="skill-percent skill-percent-javascript"
                                         data-percent="90%"
                                     ></dd>
                                     <dl class="skills-list">
@@ -309,47 +306,35 @@
                                             Scikit-Learn)
                                         </dt>
                                         <dd
-                                            class="
-                                                skill-percent
-                                                skill-percent-python
-                                            "
+                                            class="skill-percent skill-percent-python"
                                             data-percent="90%"
                                         ></dd>
                                         <dt class="skill-name">
                                             DevOps (Docker, Linux, AWS, Azure)
                                         </dt>
                                         <dd
-                                            class="
-                                                skill-percent skill-percent-css
-                                            "
+                                            class="skill-percent skill-percent-css"
                                             data-percent="80%"
                                         ></dd>
                                         <dt class="skill-name">
                                             Collaborative tools (Git, Trello)
                                         </dt>
                                         <dd
-                                            class="
-                                                skill-percent skill-percent-git
-                                            "
+                                            class="skill-percent skill-percent-git"
                                             data-percent="80%"
                                         ></dd>
                                         <dt class="skill-name">
                                             Databases (PostgreSQL, Oracle)
                                         </dt>
                                         <dd
-                                            class="
-                                                skill-percent skill-percent-scss
-                                            "
+                                            class="skill-percent skill-percent-scss"
                                             data-percent="60%"
                                         ></dd>
                                         <dt class="skill-name">
                                             C#, C (WPF, SFML)
                                         </dt>
                                         <dd
-                                            class="
-                                                skill-percent
-                                                skill-percent-jquery
-                                            "
+                                            class="skill-percent skill-percent-jquery"
                                             data-percent="50%"
                                         ></dd>
                                     </dl>
@@ -368,9 +353,7 @@
                         >👨‍💻 Professional Experience</span
                     >
                     <span class="heading-sec__sub">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Hic facilis tempora explicabo quae quod deserunt eius
-                        sapiente
+                        Through several professional experiences, I was able to acquire many skills that I will be able to put to use.
                     </span>
                 </h2>
 
@@ -443,9 +426,7 @@
                 <h2 class="heading heading-sec heading-sec__mb-med">
                     <span class="heading-sec__main">📚 Education</span>
                     <span class="heading-sec__sub">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Hic facilis tempora explicabo quae quod deserunt eius
-                        sapiente
+                        Thanks to my studies, I was able to acquire a solid base of theoretical knowledge in a wide range of fields.
                     </span>
                 </h2>
 
@@ -477,9 +458,7 @@
                 <h2 class="heading heading-sec heading-sec__mb-bg">
                     <span class="heading-sec__main">📂 Projects</span>
                     <span class="heading-sec__sub">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Hic facilis tempora explicabo quae quod deserunt eius
-                        sapiente
+                        In the last few years, I've done a lot of projects to discover or deepen my knowledge. They are almost all available on my <a style="text-decoration: underline;" href="https://github.com/Batgame">GitHub</a>!
                     </span>
                 </h2>
                 <!-- 
@@ -502,7 +481,7 @@
                         </div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">
-                                📈 What To Trade
+                                📈 What To Trade - Personal Project
                             </h3>
                             <p class="projects__row-content-desc">
                                 WTT automatically analyzes the crypto-currency
@@ -533,7 +512,7 @@
                         </div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">
-                                🤖 AI Bitcoin
+                                🤖 AI Bitcoin - Personal Project
                             </h3>
                             <p class="projects__row-content-desc">
                                 A Python script that uses a recurrent neural
@@ -565,7 +544,7 @@
                         </div>
                         <div class="projects__row-content">
                             <h3 class="projects__row-content-title">
-                                🚗 BlaBlaNight
+                                🚗 BlaBlaNight - Personal Project
                             </h3>
                             <p class="projects__row-content-desc">
                                 A simple and intuitive web-app that allows
@@ -597,12 +576,18 @@
                 <div class="about__content">
                     <div class="reference_card" id="ref1">
                         <h3 class="about__content-title">Luc Damas</h3>
-                        <p>Associate professor at IUT of Annecy in Computer Science</p>
+                        <p>
+                            Associate professor at IUT of Annecy in Computer
+                            Science
+                        </p>
                     </div>
 
                     <div class="reference_card" id="ref2">
                         <h3 class="about__content-title">Benoit Diard</h3>
-                        <p>Associate professor at IUT of Annecy in Computer Science</p>
+                        <p>
+                            Associate professor at IUT of Annecy in Computer
+                            Science
+                        </p>
                     </div>
                 </div>
             </div>

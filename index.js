@@ -64,4 +64,29 @@ new TypeIt("#whoami", {
     .type("Full-Stack ")
     .go();
 
+var elements;
+var windowHeight;
 
+function init() {
+    elements = document.querySelectorAll(".hidden");
+    windowHeight = window.innerHeight;
+}
+
+function checkposition() {
+    for (let i = 0; i < elements.length; i++) {
+        let element = elements[i];
+        let positionFromTop = elements[i].getBoundingClientRect().top;
+
+        if (positionFromTop - windowHeight <= 0) {
+
+            element.setAttribute("role", "progressbar");
+            element.classList.remove("hidden");
+        }
+    }
+}
+
+window.addEventListener("scroll", checkposition);
+window.addEventListener("resize", init);
+
+init();
+checkposition();

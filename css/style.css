@@ -823,7 +823,13 @@ textarea {
   padding: 20px 30px;
   background-color: white;
   position: relative;
-  border-radius: 6px; }
+  border-radius: 6px;
+  transition: all ease-in-out 0.5s; }
+
+.content:hover {
+  transform: scale(1.3);
+  transition: all ease-in-out 0.5s;
+  z-index: 10; }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
